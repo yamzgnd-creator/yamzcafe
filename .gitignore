@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Deploy credentials (VPS host / user / path) - never commit
+.deploy.env
+
+# Rollback copy of previous build
+dist.previous/
+
+# Logs
+*.log
+server.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Uploads (user content)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Atoms platform specific
+.mgx/
+template_config.json
+
+# Database backups
+*.sql
+*.dump
+*.backup
+*.bak
+
+# PM2 logs
+logs/
+*.pid
+
+# Runtime configs with secrets
+.env.production
+.env.staging
+
+# Archives
+*.zip
+*.tar.gz
